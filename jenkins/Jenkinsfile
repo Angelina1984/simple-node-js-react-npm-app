@@ -1,9 +1,8 @@
-// image 'autodesk-docker.art-bobcat.autodesk.com:10873/digital-help/node-12-react:latest'
 pipeline {
    agent {
        docker {
-           // image 'node:6-alpine'
-           image 'autodesk-docker.art-bobcat.autodesk.com:10873/digital-help/node-12-react:latest'
+           image 'node:6-alpine'
+          // image 'autodesk-docker.art-bobcat.autodesk.com:10873/digital-help/node-12-react:latest'
            args '-p 3001:3001'
        }
    }
